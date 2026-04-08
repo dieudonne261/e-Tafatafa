@@ -51,9 +51,10 @@ export default function LoginPage() {
   return (
     <>
       <div
+        className="login-container"
         style={{
-          width: '100vw',
-          height: '100vh',
+          width: '100%',
+          minHeight: '100vh',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -219,9 +220,29 @@ export default function LoginPage() {
       <style
         dangerouslySetInnerHTML={{
           __html: `
+            .login-container {
+              padding: 0;
+              transition: padding 0.3s ease;
+            }
             @media (max-width: 900px) {
+              .login-container {
+                padding: 1.25rem;
+                overflow-y: auto;
+              }
               .login-image-panel { display: none !important; }
-              .login-card { max-width: 500px !important; min-height: auto !important; }
+              .login-card { 
+                max-width: 500px !important; 
+                min-height: auto !important;
+                width: 100% !important;
+                margin: 0 auto;
+              }
+            }
+            @media (max-height: 600px) {
+              .login-container {
+                align-items: flex-start;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+              }
             }
           `,
         }}
