@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description:
     'A minimalist global chat room where everyone talks in real time. Clean, fast, and beautifully simple.',
   keywords: ['chat', 'messaging', 'realtime', 'global chat'],
+  manifest: '/manifest.webmanifest',
 }
 
 export const viewport: Viewport = {
