@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   description:
     'A minimalist global chat room where everyone talks in real time. Clean, fast, and beautifully simple.',
   keywords: ['chat', 'messaging', 'realtime', 'global chat'],
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'e-Tafatafa',
+  },
 }
 
 export const viewport: Viewport = {
