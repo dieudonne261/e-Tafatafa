@@ -67,7 +67,7 @@ export default async function HomePage() {
       <div className="flex-column h-full w-full" style={{ overflow: 'hidden' }}>
         <Topbar user={profile} />
         <main className="container-responsive flex-1 flex-column" style={{ minHeight: 0 }}>
-          <div className="glass-panel chat-container animate-slide-up">
+          <div className="chat-container animate-slide-up">
             <ChatRoom initialMessages={safeMessages} currentUserId={user.id} userProfile={profile} />
           </div>
         </main>
